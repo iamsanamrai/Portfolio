@@ -1,0 +1,15 @@
+I'm a self-taught web developer living in Bangalore, India. Basically I'm from Nepal. I came to Bangolore on 2017 to complete my BCA Degree.
+I'm working in TCS as a IT support engineer. Although my current job is not related to programming but I always have keen interest to be programmer.
+This website is my First step to be a pragrammer, I hope you enjoy it.
+
+.navbar {
+  height: 1vh;
+  margin-top: 30px;
+  width: calc(100% - 2rem);
+  max-width: var(--container);
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}

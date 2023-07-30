@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet"> 
+
+        <title>My Personal Blog and Portfolio</title>
+        <script src="myscript.js"></script>
+    </head>
+    
+        
+
+
+    <body>
+<!--Navigation Bar-->
+       <header class="header">
+        <a href="Home.html" class="logo">Sanam</a>
+        
+            <ul class="navbar">
+                <li><a href="#aboutme" onclick="scrollToSection('section1')">AboutMe</a></li>
+                <li><a href="Skills.html" target="_blank">Skills</a></li>
+                <li><a href="#Blog">Blog</a></li>
+                <li><a href="#Contact" onclick="scrollToSection('section2')">Contactme</a></li>       
+            </ul>
+
+        </header>
+
+    
+        <div class="container">
+
+<section class="main">
+        <div class="wrapper">
+           
+           <div class="myintro">
+            <p>Hello! I'm<br>
+                <b style="font-size: 4vw;">Sanam</b><br>
+                <ins style="font-style: italic; font-size: 2vw;">Fontend Developer</ins></p>  
+                <div class="icon">
+                    <a href=""><img src="/assets/images/github-mark-white.png" alt="Github" width="24.61" height="24"></a>            
+                <a href=""><img src="/assets/images/linkedin.png" alt="linkedin" width="24.61" height="24"></a>
+                <a href=""><img src="/assets/images/twitter-sign.png" alt="twitter-sign" width="24.61" height="24"></a>
+                </div>
+          </div>
+          <div class="mypic"><img src="/assets/images/profile2.JPG" alt="Mr.Sanam"></div>
+      </div>
+    </section>
+
+      <section id="section1">
+
+     <!-- <div class="aboutme">
+      I'm a self-taught web developer living in Bangalore, India. Basically I'm from Nepal. I came to Bangolore on 2017 to complete my BCA Degree.
+      I'm working in TCS as a IT support engineer.<br> Although my current job is not related to programming but I always have keen interest to be programmer.
+      This website is my First step to be a pragrammer, I hope you enjoy it.
+    
+<div class="mypic2"><img src="/assets/images/MeTravelling.jpg" ></div>-->   
+</div>
+    </section>
+
+    <!--Footer and Contact-->
+    <section id="section2">
+     <div class="footer">
+        <div class="contact">ContactMe
+        <p style="font-size: 12px;">This website is developed using Html, CSS and Javascript</p></div>
+     
+    
+        <div class="row"> 
+           <div class="col1">
+            <label for="clientName">Full Name</label>
+        </div> 
+        <div class="col2">
+            <input type="text" class="form-control" id="clientName" aria-describedby="emailHelp" placeholder="Your name..">
+        </div>
+        </div>
+
+            <div class="row">
+                <div class="col1">
+                <label for="clientmail">Email</label>
+            </div>
+            <div class="col2">
+                <input type="email" id="clientmail" placeholder="Your email..">
+            </div>
+            </div>
+
+            <div class="row">
+                <div class="col1">
+                    <label for="Message">Leave a Message</label>
+        </div>
+      <div class="col2">
+        <textarea placeholder="Write somethings.."></textarea>
+      </div>
+     </div>
+     <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+    </section>
+   
+     
+    </body>
+</html>

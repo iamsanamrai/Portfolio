@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --bgclolor: rgba(0, 0, 0, 0.918);
+  --textaccent: #ffffff;
+  --darkgray: rgb(36, 36, 36);
+  --fs-18: 1.125rem;
+  --fs-88: 5.5rem;
+  --fs-48: 3rem;
+  --fs-24: 1.5rem;
+  --hovercolor: hsla(0, 1%, 18%, 0.438);
+  --container: 69.375rem;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+/*Header*/
+.header {
+  height: 1vh;
+  margin-top: 30px;
+  width: calc(100% - 2rem);
+  max-width: var(--container);
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 1.02rem + 2.04vw, 2rem);
+  text-decoration: none;
+  color: var(--textaccent);
+  font-family: "Space Grotesk", sans-serif;
+  flex: 1 0 100%;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 12px;
+  padding: 0;
+  overflow: hidden;
+  height: 10vh;
+}
+
+.navbar li {
+  border-right: 1px;
+  font-size: 0.5rem;
+  font-size: clamp(0.5rem, 0.02rem + 2.04vw, 1.5rem);
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  padding: 14px 27px;
+  text-decoration: none;
+  color: var(--textaccent);
+}
+
+li a:hover {
+  background-color: var(--hovercolor);
+  height: auto;
+}
+
+body {
+  height: 1000px;
+  background-color: var(--bgclolor);
+  color: var(--textaccent);
+}
+
+/*Main*/
+.container {
+  padding-top: 140px;
+}
+.wrapper {
+  width: 100vw;
+  height: 50vh;
+  justify-content: space-around;
+  text-align: center;
+  display: flex;
+  margin-inline: auto;
+}
+
+.icon {
+  gap: 20px 25px;
+}
+
+.mypic img {
+  border-radius: 50%;
+  height: 40vh;
+  width: auto;
+  float: right;
+}
+
+.mypic2 img {
+  height: 80vh;
+  width: auto;
+}
+
+.aboutme {
+  padding-top: 100px;
+  display: flex;
+}
+
+/*ContactMe*/
+.footer {
+  background-color: var(--darkgray);
+  width: 100%;
+  height: 25vh;
+  padding-top: 40px;
+}
+textarea {
+  width: 100%;
+  height: 80px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+.contact {
+  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 1.02rem + 2.04vw, 2rem);
+  font-family: "Space Grotesk", sans-serif;
+  width: calc(100% - 2rem);
+  max-width: var(--container);
+  margin-inline: auto;
+}
+
+@media (min-width: 37.5em) {
+  /* 600px */
+  .contact {
+    width: calc(100% - 3.75rem);
+  }
+  .header {
+    width: calc(100% - 3.75rem);
+  }
+  .header {
+    justify-content: flex-start;
+    text-align: left;
+    align-items: center;
+  }
+
+  .logo {
+    flex: 1 0 0%;
+    margin-inline-end: auto;
+  }
+}
