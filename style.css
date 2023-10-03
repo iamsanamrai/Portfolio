@@ -116,6 +116,10 @@ li a:hover {
   border-bottom: 1px solid var(--gray);
 }
 
+h1 { font-size: 50px;
+
+}
+
 h1 > span {
 background-image: linear-gradient(
   to right, 
@@ -149,7 +153,7 @@ background-size: 8px 4px;
 }
 
 .mypic img {
-  border-radius: 50%;
+  border-radius: 2%;
   height: 40vh;
   width: auto;
   float: right;
