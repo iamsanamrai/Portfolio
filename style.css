@@ -74,7 +74,7 @@ a:hover {
 
 .navbar {
   list-style-type: none;
-  margin: 2px;
+  margin: -6px;
   padding: 0;
   overflow: hidden;
   height: 7vh;
