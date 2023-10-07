@@ -46,7 +46,7 @@ body {
 }
 
 
-                        /*Header*/
+                                              /*Header*/
 .header {
   margin-top: 30px;
 }
@@ -102,7 +102,7 @@ li a:hover {
 
 
 
-                    /*Main*/
+                                                 /*Main*/
 .container {
 
 }
@@ -134,6 +134,7 @@ background-size: 8px 4px;
   display: flex;
   gap: 10px;
   line-height: 0;
+  justify-content: center;
 }
 
 .download {
@@ -275,7 +276,7 @@ textarea {
   margin: 4px 2px;
   cursor: pointer;
 }
-                    /*media query for desktop view*/
+                                      /*media query for desktop view*/
 
 @media (min-width: 37.5em) {
   /* 600px */
@@ -288,6 +289,10 @@ textarea {
     justify-content: flex-start;
     text-align: left;
     align-items: center;
+  }
+
+  .icon {
+    justify-content: flex-start;
   }
 
   .header_nav {
