@@ -185,7 +185,26 @@ background-size: 8px 4px;
 p {
   color: var(--gray);
 }
+                                          /* Tech Skills */
 
+ .box {
+    display: flex;
+    flex-wrap: wrap;
+ }      
+
+ .icon_box {
+  background-color: #333; /* Dark background color */
+  color: white; /* Text color */
+  padding: 20px; /* Padding for spacing */
+  display: inline-block; /* To fit content */
+  display: flex;
+ }    
+ 
+ .icon_name {
+  flex: 1;
+  margin-top: 1px; /* Spacing between the icon and name */
+  font-size: 14px;
+ }
 
 
               /*Footer*/
@@ -241,6 +260,20 @@ textarea {
   background-color: #f8f8f8;
   font-size: 16px;
   resize: none;
+}
+
+.button {
+  background-color: var(--red);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
                     /*media query for desktop view*/
 
