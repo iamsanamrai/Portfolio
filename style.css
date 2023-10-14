@@ -4,7 +4,7 @@
 }
 
 :root {
-  --bgclolor: rgba(0, 0, 0, 0.918);
+  --bgclolor: rgba(0, 0, 0);
   --textaccent: #ffffff;
   --darkgray: rgb(36, 36, 36);
   --fs-18: 1.125rem;
@@ -117,7 +117,7 @@ li a:hover {
 }
 
 h1 { 
-  font-size: 50px;
+  font-size: 40px;
 }
 
 h1 > span {
@@ -129,6 +129,7 @@ background-position: 0 1.18em;
 background-repeat: repeat-x;
 background-size: 8px 4px;
 }
+
 
 .icon {
   display: flex;

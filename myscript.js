@@ -3,5 +3,3 @@ function scrollToSection(id){
     element.scrollIntoView({behavior: 'smooth'});
 }
 
-
-  
