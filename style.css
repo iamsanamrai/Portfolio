@@ -217,13 +217,16 @@ p {
 
  }                                         
  .wrapper_projects {
-
+  padding-block: 80px;
  }
+
  .projects_grid {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
 
  }
-  .prjoects_item {
-
+  .projects_item {
+    grid-column: 1 / span 2;
   }                                          
  .projects_tags {
 
