@@ -7,7 +7,7 @@
   --bgclolor: rgba(0, 0, 0);
   --textaccent: #ffffff;
   --darkgray: rgb(36, 36, 36);
-  --fs-18: 1.125rem;
+  --fs-18: 1.125rem;  
   --fs-88: 5.5rem;
   --fs-48: 3rem;
   --fs-24: 1.5rem;
@@ -221,12 +221,13 @@ p {
  }
 
  .projects_grid {
-  display:grid;
+  display:flex;
   grid-template-columns: repeat(2, 1fr);
 
  }
   .projects_item {
     grid-column: 1 / span 2;
+    padding: 20px;
   }                                          
  .projects_tags {
 
