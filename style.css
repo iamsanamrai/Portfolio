@@ -4,7 +4,7 @@
 }
 
 :root {
-  --bgclolor: rgba(0, 0, 0);
+  --bgclolor: rgb(33, 33, 33);
   --textaccent: #ffffff;
   --darkgray: rgb(36, 36, 36);
   --fs-18: 1.125rem;  
@@ -31,6 +31,7 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
   background-color: var(--bgclolor);
   color: var(--textaccent);
   font-family: 'Space Grotesk', sans-serif;
@@ -110,18 +111,19 @@ li a:hover {
 
 }
 
-.myintro {
-  justify-content: center;
-  text-align: center;
-  display: flex;
-  padding-top: 60px;
-  padding-bottom: 60px;
+.main_block {
+  max-width: 100vw;
+  min-height: 0;
+  height: 100vh;
   border-bottom: 1px solid var(--gray);
 }
 
-h1 { 
-  font-size: 40px;
+.myintro {
+  padding-top: 200px;
+  
 }
+
+
 
 h1 > span {
 background-image: linear-gradient(
@@ -131,6 +133,7 @@ background-image: linear-gradient(
 background-position: 0 1.18em;
 background-repeat: repeat-x;
 background-size: 8px 4px;
+font-size: 80px;
 }
 
 
@@ -153,9 +156,6 @@ background-size: 8px 4px;
   color: var(--red);
 }
 
-.main_blocks {
-  margin-left: 100px;
-}
 
 .mypic img {
   border-radius: 100%;
@@ -186,6 +186,7 @@ background-size: 8px 4px;
   padding-bottom: 60px;
   border-bottom: 1px solid var(--gray);
 }
+
 
 p {
   color: var(--gray);
@@ -222,6 +223,7 @@ p {
 
  .projects_grid {
   display:flex;
+  flex-wrap: wrap;
   grid-template-columns: repeat(2, 1fr);
 
  }
@@ -314,11 +316,12 @@ textarea {
   .wrapper {
     width: calc(100% - 3.75rem);
   }
+  .main_block {
+    
+  }
 
   .myintro {
-    justify-content: flex-start;
     text-align: left;
-    align-items: center;
   }
 
   .icon {
