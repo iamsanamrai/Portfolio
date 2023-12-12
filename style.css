@@ -234,7 +234,8 @@ p {
  .projects_tags {
 
  }
- .projects_links{
+ .projects_links, a {
+  color: var(--red);
 
  }
 
