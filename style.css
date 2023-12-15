@@ -4,7 +4,7 @@
 }
 
 :root {
-  --bgclolor: rgb(33, 33, 33);
+  --bgclolor: rgb(34, 34, 43);
   --textaccent: #ffffff;
   --darkgray: rgb(36, 36, 36);
   --fs-18: 1.125rem;  
@@ -186,9 +186,13 @@ font-size: clamp(55px, 5vw, 100px);
 }
 
 
-p {
+.text_animation {
   color: var(--gray);
   font-size: clamp(20px, 5vw, 30px);
+}
+
+p {
+  font-size: 0.9em;
 }
                                           /* Tech Skills */
 
@@ -335,6 +339,10 @@ textarea {
 
   .contact {
     width: calc(100% - 3.75rem); 
+  }
+
+  p {
+    font-size: 1.1em; /* Smaller font size for smaller screens */
   }
 
 }
