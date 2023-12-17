@@ -139,7 +139,7 @@ font-size: clamp(55px, 5vw, 100px);
 .icon {
   display: flex;
   gap: 10px;
-  line-height: 0;
+  line-height: 90px;
 }
 
 .download {
