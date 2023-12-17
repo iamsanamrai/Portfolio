@@ -14,7 +14,7 @@
   --hovercolor: hsla(0, 1%, 18%, 0.438);
   --container: 69.375rem;
   --red: #C6011F;
-  --gray: hsl(0, 0%, 85%);
+  --gray: rgb(217, 217, 217);
 }
 
 html {
@@ -131,6 +131,10 @@ background-size: 8px 4px;
 font-size: clamp(55px, 5vw, 100px);
 }
 
+.spantxt {
+  font-size: clamp(20px, 5vw, 30px);
+  color: rgb(190, 190, 190);
+}
 
 .icon {
   display: flex;
@@ -151,18 +155,6 @@ font-size: clamp(55px, 5vw, 100px);
 }
 
 
-.mypic img {
-  border-radius: 100%;
-  height: 20vh;
-  width: auto;
-  float: right;
-}
-
-.mypic2 img {
-  height: 80vh;
-  width: auto;
-}
-
 .aboutme {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -181,53 +173,6 @@ font-size: clamp(55px, 5vw, 100px);
   border-bottom: 1px solid var(--gray);
 }
 
-.animation {
-  display: flex;
-}
-
-.animation .static-text {
-  color: var(--gray);
-  font-size: clamp(16px, 5vw, 16px);
-}
-
-.animation .dynamic-text {
-  height: 60px;
-}
-
-
-.dynamic-text li {
-  position: relative;
-  top: 0;
-  color: var(--gray);
-  padding: 0 10px;
-  font-size: clamp(16px, 5vw, 16px);
-  list-style: none;
-}
-
-.dynamic-text li span {
-  position: relative;
-  margin: 5px 0;
-}
-
-.dynamic-text li span::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 50px;
-  background: var(--bgclolor);
-  border-left: 4px solid #22222b;
-  animation: typing 5s infinite alternate;
-}
-
-@keyframes typing {
-  40%, 60%{
-    left: calc(100% + 30px);
-  }
-  100%{
-    left: 0;
-  }
-}
 
 .font_aboutme {
   font-size: 0.9em;
@@ -238,9 +183,6 @@ font-size: clamp(55px, 5vw, 100px);
     display: flex;
     flex-wrap: wrap;
  }      
-.icon {
-  height: 40px;
-}
 
  .icon_box {
   background-color: #333; /* Dark background color */
@@ -384,14 +326,6 @@ textarea {
 
   .font_aboutme {
     font-size: 1.1em; /* Smaller font size for smaller screens */
-  }
-
-  .animation .static-text {
-    font-size: clamp(20px, 5vw, 30px);
-  }
-
-  .dynamic-text li {
-    font-size: clamp(20px, 5vw, 30px);
   }
 
 }
