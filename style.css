@@ -1,4 +1,4 @@
-* {
+body, h1, ul, li {
   padding: 0;
   margin: 0;
 }
@@ -23,13 +23,7 @@ html {
   height: 100%;
 }
 
-
-
 body {
-  margin: 0;
-  padding: 0;
-  background-color: var(--bgclolor);
-  color: var(--textaccent);
   font-family: 'Space Grotesk', sans-serif;
   line-height: 1.56;
   font-size: var(--fs-18);
@@ -46,7 +40,9 @@ body {
 
                                               /*Header*/
 .header {
-  margin-top: 30px;
+    background-color: var(--bgclolor);
+    color: white;
+    padding: 1rem 0;
 }
 
 .header_nav {
@@ -61,7 +57,7 @@ body {
   font-size: 2.2rem;
   font-size: clamp(2.2rem, 1.02rem + 2.04vw, 2rem);
   text-decoration: none;
-  color: #C6011F;
+  color: var(--red);
   font-family: "Space Grotesk", sans-serif;
   flex: 1 0 100%;
 }
@@ -73,10 +69,7 @@ a:hover {
 
 .navbar {
   list-style-type: none;
-  margin: -20px;
-  padding: 0;
   overflow: hidden;
-  height: 7vh;
 }
 
 .navbar li {
@@ -95,7 +88,6 @@ a:hover {
 
 li a:hover {
   background-color: var(--red);
-  height: auto;
 }
 
 
@@ -103,11 +95,15 @@ li a:hover {
 
                                                  /*Main*/
 
+ .container {
+    background-color: #f0f0f0;
+}
+                                                
 .main_block {
   max-width: 100vw;
   min-height: 0;
   height: 100vh;
-  border-bottom: 1px solid var(--gray);
+  border-bottom: 2px solid black;
 }
 
 .myintro {
@@ -128,13 +124,16 @@ background-image: linear-gradient(
 background-position: 0 1.18em;
 background-repeat: repeat-x;
 background-size: 8px 4px;
-font-size: clamp(55px, 5vw, 100px);
+font-size: clamp(45px, 5vw, 100px);
 }
 
 .spantxt {
   font-size: clamp(20px, 5vw, 30px);
-  color: rgb(190, 190, 190);
 }
+
+/* img {
+  background-color: black;
+} */
 
 .icon {
   display: flex;
@@ -143,15 +142,13 @@ font-size: clamp(55px, 5vw, 100px);
 }
 
 .download {
-  background-image: linear-gradient(
-  to right, 
-  var(--red) 75%, 
-  var(--red) 75%);
-  background-position: 0 1.18em;
-  background-repeat: repeat-x;
-  background-size: 8px 4px;
-  text-decoration: none;
-  color: var(--red);
+  display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--red);
+    color: white;
+    text-decoration: none;
+    margin-top: 1rem;
+    border-radius: 5px;
 }
 
 .font_heading {
@@ -162,19 +159,18 @@ font-size: clamp(55px, 5vw, 100px);
 .aboutme {
   padding-top: 60px;
   padding-bottom: 60px;
-  border-bottom: 1px solid var(--gray);
+  border-bottom: 2px solid black;
 }
 
 .skills {
   padding-top: 60px;
   padding-bottom: 60px;
-  border-bottom: 1px solid var(--gray);
+  border-bottom: 2px solid black;
 }
 
 .projects {
   padding-top: 60px;
   padding-bottom: 60px;
-  border-bottom: 1px solid var(--gray);
 }
 
 
@@ -186,6 +182,7 @@ font-size: clamp(55px, 5vw, 100px);
  .box {
     display: flex;
     flex-wrap: wrap;
+    gap: 15px;
  }      
 
  .icon_box {
@@ -226,20 +223,36 @@ font-size: clamp(55px, 5vw, 100px);
  }
 
 
+.projects_tags span {
+  background-color: #333;
+  color: var(--textaccent);
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.projects_links a {
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  color: var(--textaccent);
+  background-color: var(--red);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
 
                                             /*Footer*/ 
 
 .footer {
-  /*background-color: var(--darkgray);*/
-  width: calc(100% - 2rem);
-  max-width: var(--container);
-  margin-inline: auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  background-color: var(--bgclolor);
+  color: var(--textaccent);
   display: flex;
+  
 }
 
 .contact {
+  padding: 10px 20px;
   font-size: 1rem;
   font-size: clamp(1rem, 1.02rem + 2.04vw, 2rem);
   font-family: "Space Grotesk", sans-serif;
@@ -256,10 +269,9 @@ font-size: clamp(55px, 5vw, 100px);
 }
 
 .copyright {
-  width: calc(100% - 2rem);
-  max-width: var(--container);
   margin-inline: auto;
   background-color: var(--darkgray);
+  color: var(--textaccent);
   display: flex;
   justify-content: space-around;
   padding: 10px 20px;
