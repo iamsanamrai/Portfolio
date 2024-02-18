@@ -139,6 +139,7 @@ font-size: clamp(45px, 5vw, 100px);
   display: flex;
   gap: 10px;
   line-height: 90px;
+  background-color: #22222b;
 }
 
 .download {
