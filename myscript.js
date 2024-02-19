@@ -26,7 +26,7 @@ window.addEventListener("scroll", function() {
     
     if (currentScroll > lastScrollTop) {
         // Scroll Down
-        document.getElementById("mainHeader").style.top = "-100px"; // Adjust this value based on your header's height
+        document.getElementById("mainHeader").style.top = "-400px"; // Adjust this value based on your header's height
     } else {
         // Scroll Up
         document.getElementById("mainHeader").style.top = "0px";
