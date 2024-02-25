@@ -50,15 +50,14 @@ body {
     position: fixed;
     width: 100%;
     z-index: 10;
-    transition: top 0.5s;
+    transition: top 0.3s;
 }
 
 .header_nav {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  gap: 20px 25px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
 }
 
 .logo {
@@ -75,9 +74,66 @@ a:hover {
   color: var(--textaccent);
 }
 
+.menu {
+  @media (width < 40em) {
+    position: fixed;
+    inset: 0;
+    padding:1.5rem;
+    background-image: url(assets/images/jeremy-perkins-uhjiu8FjnsQ-unsplash-small.jpg);
+    translate: 100vw 0;
+    transition: translate 0.5s ease-in-out;
+  }
+}
+
+.topnav_open {
+  background: none;
+  border: none;
+  padding: 0;
+  display: block;
+  margin-inline-start: auto;
+  @media (width >= 40em) {
+    display: none;
+  }
+
+  img {
+    width: 2.5rem;
+  }
+
+}
+
+.topnav_open[aria-expanded='true'] {
+  + .menu {
+    translate: 0;
+  }
+}
+
+.topnav_close {
+  background: none;
+  border: none;
+  padding: 0;
+  display: block;
+  margin-inline-start: auto;
+  margin-block-end: 8rem;
+  @media (width >= 40em) {
+    display: none;
+  }
+
+  img {
+    width: 2.5rem;
+  }
+}
+
 .navbar {
   list-style-type: none;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  @media (width < 40em) {
+    flex-direction: column;
+  }
 }
 
 .navbar li {
@@ -97,9 +153,6 @@ a:hover {
 li a:hover {
   background-color: var(--red);
 }
-
-
-
 
                                                  /*Main*/
 
@@ -318,6 +371,8 @@ textarea {
 }
                                       /*media query for desktop view*/
 
+
+
 @media (min-width: 37.5em) {
   /* 600px */
 
@@ -331,12 +386,6 @@ textarea {
 
   .icon {
     justify-content: flex-start;
-  }
-
-  .header_nav {
-    justify-content: flex-start;
-    text-align: left;
-    align-items: center;
   }
 
   .logo {

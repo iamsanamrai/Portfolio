@@ -26,7 +26,7 @@ window.addEventListener("scroll", function() {
     
     if (currentScroll > lastScrollTop) {
         // Scroll Down
-        document.getElementById("mainHeader").style.top = "-400px"; // Adjust this value based on your header's height
+        document.getElementById("mainHeader").style.top = "-200px"; // Adjust this value based on your header's height
     } else {
         // Scroll Up
         document.getElementById("mainHeader").style.top = "0px";
@@ -34,3 +34,18 @@ window.addEventListener("scroll", function() {
     
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
 }, false);
+
+//hamburgur menu
+const btnOpen = document.querySelector('#btnOpen');
+const btnClose = document.querySelector('#btnClose');
+
+function openMobileMenu() {
+  btnOpen.setAttribute('aria-expanded', 'true');
+}
+
+function closeMobileMenu() {
+  btnOpen.setAttribute('aria-expanded', 'false');
+}
+
+btnOpen.addEventListener('click', openMobileMenu);
+btnClose.addEventListener('click', closeMobileMenu);
